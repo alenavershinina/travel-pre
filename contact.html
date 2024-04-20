@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путешествия</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="shared.css" />
+    <link rel="stylesheet" href="contact.css" />
+    <script src="/contact.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <a id="logo" href="index.html">Путешествия</a>
+      <nav>
+        <ul>
+          <li><a href="/places.html">Места</a></li>
+          <li><a href="/contact.html">Контакт</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="contact-form">
+        <form id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-row">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите ваше имя" />
+          </div>
+          <div class="form-row">
+            <label for="city">Какой город вы хотите посетить?</label>
+            <select id="city" name="city">
+              <option disabled selected value>-- выберите город --</option>
+              <option value="sydney">Сидней</option>
+              <option value="barcelona">Барселона</option>
+              <option value="paris">Париж</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>Когда вы хотите поехать?</label>
+            <input type="radio" id="winter" name="season" value="winter" />
+            <label for="winter">Зима</label>
+            <input type="radio" id="spring" name="season" value="spring" />
+            <label for="spring">Весна</label>
+            <input type="radio" id="summer" name="season" value="summer" />
+            <label for="summer">Лето</label>
+            <input type="radio" id="autumn" name="season" value="autumn" />
+            <label for="autumn">Осень</label>
+          </div>
+          <div class="form-row">
+            <label for="subject">Ваше сообщение</label>
+            <textarea id="subject" name="subject"></textarea>
+          </div>
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com">
+            <img src="/images/icons/instagram.png" alt="Instagram logo" />
+          </a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com">
+            <img src="/images/icons/facebook.png" alt="Facebook logo" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

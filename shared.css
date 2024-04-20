@@ -1,6 +1,13 @@
+html {
+  width: 100%;
+  min-height: 100vh;
+}
+
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  width: 100%;
+  min-height: 100vh;
 }
 
 ul {
@@ -26,6 +33,7 @@ header {
   position: absolute;
   width: 100%;
   box-sizing: border-box;
+  height: 120px;
 }
 
 header ul {
@@ -46,6 +54,10 @@ header a {
 
 header a:hover {
   color: rgb(236, 195, 140);
+}
+
+main {
+  min-height: calc(100vh - 280px);
 }
 
 footer {
